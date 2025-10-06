@@ -1,16 +1,53 @@
-# React + Vite
+# 🎮 Gaming Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated gaming website built using **Vite**, **React**, **Tailwind CSS**, **GSAP**, and **Node.js** — inspired by [Zentry](https://zentry.com/).  
+This project captures the immersive feel of Zentry’s design while adding custom animations, smooth transitions, and enhanced interactivity.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+🔗 [View Website](#)  
+*(Replace `#` with your live Vercel link once deployed)*
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧠 Inspiration
+This project was inspired by the stunning visuals and interactivity of [Zentry](https://zentry.com/).  
+I recreated and enhanced some of their design and animation concepts to practice front-end animation, UI design, and creative web development techniques.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Category | Technologies Used |
+|-----------|--------------------|
+| **Frontend** | Vite, React, JavaScript |
+| **Styling** | Tailwind CSS |
+| **Animations** | GSAP (GreenSock Animation Platform) |
+| **Backend / Tools** | Node.js |
+| **Development Environment** | Visual Studio Code (VS Code) |
+
+---
+
+## ✨ Features
+
+- Smooth **GSAP animations** and scroll effects  
+- **Responsive design** powered by Tailwind CSS  
+- **Fast performance** with Vite build tool  
+- Organized and reusable **React components**  
+- Inspired UI/UX from Zentry with added personal creative touches  
+
+---
+## Future Improvements
+
+- Add dynamic content using a backend or CMS
+
+- Include a gaming news or community section
+
+- Improve accessibility and dark mode support
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/khalid-tarazi/gaming-website.git

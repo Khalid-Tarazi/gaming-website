@@ -52,7 +52,13 @@ const Hero = () => {
           height: '100%',
           duration: 1,
           ease: 'power2.inOut',
-          onStart: () => nextVidoRef.current?.play(),
+          onStart: () => {
+            const v = nextVidoRef.current;
+            if (v) {
+              v.style.opacity = '1';
+              v.play();
+            }
+          },
         });
 
         gsap.from('#current-video', {
@@ -91,7 +97,7 @@ const Hero = () => {
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {/* ✅ Loader */}
       {isLoading && (
-        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
+        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-black">
           <div className="three-body">
             <div className="three-body__dot" />
             <div className="three-body__dot" />
@@ -100,7 +106,7 @@ const Hero = () => {
         </div>
       )}
 
-      <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75">
+      <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-black">
         <div>
           {/* Mini preview video */}
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
@@ -114,9 +120,13 @@ const Hero = () => {
                 loop
                 muted
                 playsInline
+                preload="auto"
                 id="current-video"
-                className="size-64 origin-center scale-150 object-cover object-center"
-                onLoadedData={handleVideoLoad}
+                className="size-64 origin-center scale-150 object-cover object-center bg-black opacity-0 transition-opacity duration-500"
+                onLoadedData={(e) => {
+                  e.currentTarget.style.opacity = '1';
+                  handleVideoLoad();
+                }}
               />
             </div>
           </div>
@@ -128,9 +138,13 @@ const Hero = () => {
             loop
             muted
             playsInline
+            preload="auto"
             id="next-video"
-            className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
-            onLoadedData={handleVideoLoad}
+            className="absolute-center invisible absolute z-20 size-64 object-cover object-center bg-black opacity-0 transition-opacity duration-500"
+            onLoadedData={(e) => {
+              e.currentTarget.style.opacity = '1';
+              handleVideoLoad();
+            }}
           />
 
           {/* Background main video */}
@@ -140,8 +154,12 @@ const Hero = () => {
             loop
             muted
             playsInline
-            className="absolute left-0 top-0 size-full object-cover object-center"
-            onLoadedData={handleVideoLoad}
+            preload="auto"
+            className="absolute left-0 top-0 size-full object-cover object-center bg-black opacity-0 transition-opacity duration-500"
+            onLoadedData={(e) => {
+              e.currentTarget.style.opacity = '1';
+              handleVideoLoad();
+            }}
           />
         </div>
 

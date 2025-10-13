@@ -45,6 +45,8 @@ I recreated and enhanced some of their design and animation concepts to practice
 
 - Improve accessibility and dark mode support
 
+- Fix some features that are not working probably on mobile version.
+
 ## ⚙️ Installation & Setup
 
 1. **Clone the repository**

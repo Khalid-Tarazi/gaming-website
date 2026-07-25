@@ -5,18 +5,18 @@ This project captures the immersive feel of Zentry’s design while adding custo
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 🔗 [View Website](https://gaming-website-yk6o.vercel.app/)  
 
 ---
 
-## 🧠 Inspiration
+## Inspiration
 This project was inspired by the stunning visuals and interactivity of [Zentry](https://zentry.com/).  
 I recreated and enhanced some of their design and animation concepts to practice front-end animation, UI design, and creative web development techniques.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Technologies Used |
 |-----------|--------------------|
@@ -28,7 +28,7 @@ I recreated and enhanced some of their design and animation concepts to practice
 
 ---
 
-## ✨ Features
+## Features
 
 - Smooth **GSAP animations** and scroll effects  
 - **Responsive design** powered by Tailwind CSS  
@@ -47,7 +47,7 @@ I recreated and enhanced some of their design and animation concepts to practice
 
 - Fix some features that are not working probably on mobile version.
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository**
    ```bash

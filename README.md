@@ -6,7 +6,7 @@ This project captures the immersive feel of Zentry’s design while adding custo
 ---
 
 ## Live Demo
-🔗 [View Website](https://gaming-website-yk6o.vercel.app/)  
+🔗 [View Website](https://gaminghub.tarazi.dev/)  
 
 ---
 
